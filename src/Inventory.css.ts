@@ -21,6 +21,7 @@ export const itemCss = style({
   alignItems: "center",
   justifyContent: "center",
   position: "relative",
+  // @ts-ignore
   "> img": {
     width: "100%",
     height: "100%",

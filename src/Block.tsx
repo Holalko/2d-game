@@ -43,7 +43,7 @@ export const Block = memo(({ y, x, chunkX }: Props) => {
         data-chunk={`${chunkX}`}
         onClick={putDirt}
         style={{ background: "darkblue" }}
-        className={`${blockStyle} ${isInPlayerDistance ? blockInDistanceStyle : ''}`}d
+        className={`${blockStyle} ${isInPlayerDistance ? blockInDistanceStyle : ''}`}
       />
     );
   }

@@ -10,7 +10,7 @@ export const Inventory = () => {
   const setInventoryIndex = useGameEngine((s) => s.inventoryActions.select);
 
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event: any) => {
       const code = event.code;
 
       if (code.startsWith("Digit")) {

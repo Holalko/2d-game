@@ -1,6 +1,5 @@
-import { player as playerStyle, playerX, playerY } from "./Block.css.ts";
-import { assignInlineVars } from "@vanilla-extract/dynamic";
-import { TILE_SIZE } from "./Grid.css.ts";
+import {player as playerStyle} from "./Block.css.ts";
+import {TILE_SIZE} from "./Grid.css.ts";
 
 import Run1 from "./assets/Run-1.png";
 import Run2 from "./assets/Run-2.png";
@@ -17,8 +16,8 @@ import Run12 from "./assets/Run-12.png";
 import Run13 from "./assets/Run-13.png";
 import Run14 from "./assets/Run-14.png";
 import Run15 from "./assets/Run-15.png";
-import { useGameEngine } from "./store.ts";
-import { useEffect, useRef, useState } from "react";
+import {useGameEngine} from "./store.ts";
+import {useEffect, useRef, useState} from "react";
 
 const runSprites = [
   Run1,
@@ -45,7 +44,7 @@ export const Player = () => {
   const movePlayer = useGameEngine((s) => s.playerActions.move);
 
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event: any) => {
       const code = event.code;
 
       if (
